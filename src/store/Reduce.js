@@ -10,7 +10,7 @@ const reducer = (state = initialState, action)=>{
     if(state.pass.length < 4) {
       return{
         ...state,
-        pass: state.pass += action.value,
+        pass: state.pass += action.value.toString(),
         stars: state.stars += '*',
       }
     }
